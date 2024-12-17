@@ -22,32 +22,45 @@ const ImageGallery: React.FC = () => {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center"
       >
         {/* First Image */}
-        <motion.div variants={slideInLeft} className="rounded-lg overflow-hidden shadow-md">
+        <motion.div
+          variants={slideInLeft}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="rounded-lg overflow-hidden shadow-md"
+        >
           <Image
             src="/webverse.png"
             alt="Nature Sphere"
             width={300}
             height={350}
-            layout="responsive"
-            className="object-cover rounded-lg"
+            className="object-cover rounded-lg w-full h-auto"
           />
         </motion.div>
 
         {/* Second Image */}
-        <motion.div variants={slideUp} className="rounded-lg overflow-hidden shadow-md">
+        <motion.div
+          variants={slideUp}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="rounded-lg overflow-hidden shadow-md"
+        >
           <Image
             src="/task_ops_2.jpeg"
             alt="Futuristic Art"
             width={100}
             height={350}
-            layout="responsive"
-            className="object-cover rounded-lg"
+            className="object-cover rounded-lg w-full h-auto"
           />
         </motion.div>
 
         {/* Side Content */}
         <motion.div
           variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true, amount: 0.2 }}
           className="flex flex-col justify-center text-left text-white"
         >
           <h2 className="font-bold text-2xl mb-4">Explore AI Images</h2>
@@ -72,26 +85,36 @@ const ImageGallery: React.FC = () => {
         </motion.div>
 
         {/* Third Image */}
-        <motion.div variants={slideInRight} className="rounded-lg overflow-hidden shadow-md">
+        <motion.div
+          variants={slideInRight}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="rounded-lg overflow-hidden shadow-md"
+        >
           <Image
             src="/tech-know-camp.png"
             alt="Abstract Glass"
             width={350}
             height={350}
-            layout="responsive"
-            className="object-cover rounded-lg"
+            className="object-cover rounded-lg w-full h-auto"
           />
         </motion.div>
 
         {/* Fourth Image */}
-        <motion.div variants={scaleUp} className="rounded-lg overflow-hidden shadow-md">
+        <motion.div
+          variants={scaleUp}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="rounded-lg overflow-hidden shadow-md"
+        >
           <Image
             src="/cracking_interview.jpeg"
             alt="Pink Mountain"
             width={350}
             height={350}
-            layout="responsive"
-            className="object-cover rounded-lg"
+            className="object-cover rounded-lg w-full h-auto"
           />
         </motion.div>
       </motion.div>

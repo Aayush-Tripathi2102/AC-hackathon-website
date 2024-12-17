@@ -101,8 +101,8 @@ export function PrizesSection() {
                     className="relative h-16 w-16 md:h-20 md:w-20 overflow-hidden rounded-full bg-purple-500"
                   >
                     <Image
-                      src={prize.icon}
-                      alt="Prize Icon"
+                      src={prize.icon || "/ai1.png"} //Defaukt icon
+                      alt={prize.icon ? `${prize.title} Icon` : "Default Icon"}
                       fill
                       className="object-cover"
                     />

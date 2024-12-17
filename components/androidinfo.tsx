@@ -2,8 +2,8 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { Button } from './ui/button'
-import { slideUp, fadeIn, staggerContainer } from '@/lib/motion-variants'
+// import { Button } from './ui/button'
+import { slideUp, fadeIn } from '@/lib/motion-variants'
 import { motion } from 'framer-motion'
 
 const Androidinfo: React.FC = () => {

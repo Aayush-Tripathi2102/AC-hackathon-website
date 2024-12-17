@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { staggerContainer, slideInLeft, slideUp, scaleUp } from "@/lib/motion-variants"
+import { slideUp, scaleUp } from "@/lib/motion-variants"
 
 const prizes = [
   {

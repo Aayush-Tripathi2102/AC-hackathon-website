@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { RollingSlideshow } from "./rolling-slideshow"
+// import { RollingSlideshow } from "./rolling-slideshow"
 import { fadeIn, slideInLeft, slideInRight, slideUp, staggerContainer } from "@/lib/motion-variants"
 import { useToast } from "@/hooks/use-toast"
 

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { staggerContainer, slideInLeft, fadeIn } from "@/lib/motion-variants"
+import { staggerContainer, slideInLeft } from "@/lib/motion-variants"
 
 export function ConferencePasses() {
   // State to track hover
